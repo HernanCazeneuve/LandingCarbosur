@@ -6,7 +6,7 @@ var center;
 function initialize() {
   var mapOptions = {
     zoom: 14,
-    center: new google.maps.LatLng(37.769725, -122.462154),
+    center: new google.maps.LatLng(-33.069252, -60.599063),
     scrollwheel: false,
     draggable: false,
   };
@@ -30,8 +30,7 @@ function loadGoogleMap() {
   var script = document.createElement("script");
   script.type = "text/javascript";
   script.src =
-    "https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&" +
-    "callback=initialize";
+    "https://maps.googleapis.com/maps/api/js?key=AIzaSyDqlsgVzVNQAVEWfEwnWUeEJIQtCHCdLUk&callback=initMap";
   document.body.appendChild(script);
 }
 
